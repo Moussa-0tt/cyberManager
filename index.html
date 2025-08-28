@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Gaming Management Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Cyber Gaming Management </h1>
+</header>
+
+<nav>
+    <button id="btnStationRun">Station Run</button>
+    <button id="btnHistorique">Historique Station</button>
+</nav>
+
+<main>
+    <!-- Station Run -->
+    <section id="stationRunSection" class="section" style="display:none;">
+        <button id="btnAjouterStation">Ajouter Station</button>
+        <button id="btnStopAll">Arrêter tous les chronomètres</button>
+        <div id="formContainer"></div>
+        <div id="stationsContainer"></div>
+    </section>
+
+    <!-- Historique -->
+    <section id="historiqueSection" class="section" style="display:none;">
+        <div id="authHistorique">
+            <input type="password" id="codeAcces" placeholder="Entrez le code">
+            <button id="btnValiderCode">Valider</button>
+            <select id="filterType">
+                <option value="">Tous les types</option>
+                <option value="PC">PC</option>
+                <option value="PS4">PS4</option>
+                <option value="PS3">PS3</option>
+            </select>
+        </div>
+        <div id="historiqueContainer" style="display:none;">
+            <table id="historiqueTable">
+                <thead>
+                    <tr>
+                        <th>idClient</th>
+                        <th>Numéro de poste</th>
+                        <th>Type de poste</th>
+                        <th>Temps</th>
+                        <th>Prix (FCFA)</th>
+                        <th>Heure d'achat</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </section>
+
+    <audio id="alertSound" src="soundFx/Amber.mp3" preload="auto"></audio>
+</main>
+<footer>
+    <p>&copy; 2025 Cyber Gaming Management. Tous droits réservés.</p>
+    <p><a href="https://github.com/Moussa-0tt">GitLink Mss-ott</a></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
